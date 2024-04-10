@@ -38,7 +38,7 @@
 
       // Add button for widget in toolbar
       editor.ui.addButton('alert', {
-        label: 'Add alert',
+        label: editor.lang.wet_alert.add,
         command: 'wet_alert',
         toolbar: 'insert',
       });
@@ -47,7 +47,7 @@
       if (editor.contextMenu) {
         editor.addMenuGroup('alertGroup');
         editor.addMenuItem('alertItem', {
-          label: 'Edit Alert',
+          label: editor.lang.wet_alert.edit,
           icon: this.path + 'icons/alert.png',
           command: 'wet_alert',
           group: 'alertGroup'
