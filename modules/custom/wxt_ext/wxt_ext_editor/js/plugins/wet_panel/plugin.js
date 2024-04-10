@@ -41,7 +41,7 @@
 
       // Add button for widget in toolbar
       editor.ui.addButton('panel', {
-        label: 'Add panel',
+        label: editor.lang.wet_panel.add,
         command: 'wet_panel',
         toolbar: 'insert',
       });
@@ -50,7 +50,7 @@
       if (editor.contextMenu) {
         editor.addMenuGroup('panelGroup');
         editor.addMenuItem('panelItem', {
-          label: 'Edit Panel',
+          label: editor.lang.wet_panel.edit,
           icon: this.path + 'icons/panel.png',
           command: 'wet_panel',
           group: 'panelGroup'
