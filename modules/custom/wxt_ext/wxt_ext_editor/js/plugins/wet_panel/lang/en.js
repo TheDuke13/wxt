@@ -5,6 +5,8 @@
         title: 'Panel',
         content: 'Panel content...',
         add: 'Add panel',
-        edit: 'Edit panel'
+        edit: 'Edit panel',
+        config: 'Panel configuration',
+        type: 'Panel type'
     });
 })(CKEDITOR);
