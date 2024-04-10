@@ -3,15 +3,8 @@
  */
 
 CKEDITOR.dialog.add('wet_alert', function(editor) {
-  // The translation function.
-  const { t } = editor.locale;
-
-  // The localized label.
-  const title = t( 'Alert configuration' );
-  const alertType = t( 'Alert type' );
-  
   return {
-    title: title,
+    title: editor.lang.wet_alert.config,
     minWidth: 300,
     minHeight: 120,
     contents: [
@@ -21,7 +14,7 @@ CKEDITOR.dialog.add('wet_alert', function(editor) {
           {
             id: 'type',
             type: 'select',
-            label: alertType,
+            label: editor.lang.wet_alert.type,
             items: [
               ['info', 'info'],
               ['success', 'success'],

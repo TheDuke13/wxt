@@ -5,6 +5,8 @@
         title: 'Alert',
         content: 'Alert content...',
         add: 'Add alert',
-        edit: 'Edit alert'
+        edit: 'Edit alert',
+        config: 'Alert configuration',
+        type: 'Alert type'
     });
 })(CKEDITOR);
