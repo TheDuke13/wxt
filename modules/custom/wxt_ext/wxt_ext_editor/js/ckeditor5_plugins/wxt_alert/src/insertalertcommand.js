@@ -60,11 +60,11 @@ function createAlert(writer, alert) {
     // Add placeholder text to new alert widget
     for (let child of alert.getChildren()) {
         if (child.name.startsWith('alertTitle-')) {
-            writer.insertText('Alert title', child)
+            writer.insertText(editor.lang.wet_panel.title, child)
         } else if (child.name.startsWith('alertBody-')) {
             const placeholderText = writer.createElement('paragraph');
             writer.append(placeholderText, child);
-            writer.insertText('Alert body', placeholderText);
+            writer.insertText(editor.lang.wet_panel.content, placeholderText);
         }
     }
     return alert;
