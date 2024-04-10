@@ -59,13 +59,13 @@ function createPanel(writer, panel) {
         if (child.name.startsWith('panelHeading-')) {
             for (let c of child.getChildren()) {
                 if (c.name.startsWith('panelTitle-')) {
-                    writer.insertText('Panel title', c)
+                    writer.insertText(editor.lang.wet_panel.title, c)
                 }
             }
         } else if (child.name.startsWith('panelBody-')) {
             const placeholderText = writer.createElement('paragraph');
             writer.append(placeholderText, child);
-            writer.insertText('Panel body', placeholderText);
+            writer.insertText(editor.lang.wet_panel.content, placeholderText);
         }
     }
     return panel;
