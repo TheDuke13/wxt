@@ -3,8 +3,15 @@
  */
 
 CKEDITOR.dialog.add('wet_panel', function(editor) {
+  // The translation function.
+  const { t } = editor.locale;
+
+  // The localized label.
+  const title = t( 'Panel configuration' );
+  const panelType = t( 'Panel type' );
+
   return {
-    title: 'Panel configuration',
+    title: title,
     minWidth: 300,
     minHeight: 120,
     contents: [
@@ -14,7 +21,7 @@ CKEDITOR.dialog.add('wet_panel', function(editor) {
           {
             id: 'type',
             type: 'select',
-            label: 'Panel type',
+            label: panelType,
             items: [
               ['primary', 'primary'],
               ['default', 'default'],
